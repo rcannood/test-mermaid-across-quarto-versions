@@ -1,0 +1,29 @@
+Quarto 1.6.1
+      Pandoc version 3.2.0: OK
+      Dart Sass version 1.70.0: OK
+      Deno version 1.41.0: OK
+      Typst version 0.11.0: OK
+      Version: 1.6.1
+      Path: /home/rcannood/.local/share/quarto-1.6.1/bin
+
+      TinyTeX: (not installed)
+      Chromium: (not installed)
+
+      Using: Installation From Path
+      Path: /usr/bin
+      Version: 2023
+
+      Version: 3.12.9
+      Path: /usr/bin/python3
+      Jupyter: 5.7.2
+      Kernels: python3
+
+      Version: 4.4.2
+      Path: /usr/lib64/R
+      LibPaths:
+        - /home/rcannood/R/x86_64-redhat-linux-gnu-library/4.4
+        - /usr/lib64/R/library
+        - /usr/share/R/library
+      knitr: 1.49
+      rmarkdown: 2.29
+

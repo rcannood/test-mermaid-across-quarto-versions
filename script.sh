@@ -22,25 +22,29 @@ function get_quarto {
 for version in "${versions[@]}"; do
   qmd_file=render-$version.qmd
   html_file=render-$version.html
-
-  # skip if html already exists
-  if [ -f $html_file ]; then
-    continue
-  fi
-  
-  echo "Rendering with Quarto $version"
+  check_file=render-check-$version.txt
 
   # determine quarto path
   quarto_path=$HOME/.local/share/quarto-$version/bin/quarto
   get_quarto "$version" "$quarto_path"
 
-  # copy template
-  cp example.qmd $qmd_file
+  # skip if html already exists
+  if [ ! -f $html_file ]; then
+    echo "Rendering with Quarto $version"
 
-  # change title in header
-  sed -i "s/Mermaid in Quarto/Mermaid in Quarto $version/g" $qmd_file
-  
-  # render using this version of quarto
-  $quarto_path render $qmd_file
+    # copy template
+    cp example.qmd $qmd_file
+
+    # change title in header
+    sed -i "s/Mermaid in Quarto/Mermaid in Quarto $version/g" $qmd_file
+    
+    # render using this version of quarto
+    $quarto_path render $qmd_file
+  fi
+
+  if [ ! -f $check_file ]; then
+    echo "Checking Mermaid in Quarto $version"
+    $quarto_path check --log $check_file
+  fi
 done
 

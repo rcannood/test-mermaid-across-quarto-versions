@@ -1,0 +1,66 @@
+Quarto 1.7.14
+
+      Quarto cache location: /home/rcannood/.cache/quarto
+
+      Pandoc version 3.4.0: OK
+
+      Dart Sass version 1.70.0: OK
+
+      Deno version 1.46.3: OK
+
+      Typst version 0.11.0: OK
+
+      Version: 1.7.14
+
+      Path: /home/rcannood/.local/share/quarto-1.7.14/bin
+
+
+
+[2K[G
+      TinyTeX: (not installed)
+
+      Chromium: (not installed)
+
+
+
+[2K[G
+      Using: Installation From Path
+
+      Path: /usr/bin
+
+      Version: 2023
+
+
+
+[2K[G
+      Using: Chrome found on system
+
+      Path: /usr/bin/google-chrome
+
+      Source: PATH
+
+
+
+[2K[G
+[2K[G
+      Version: 3.12.9
+      Path: /usr/bin/python3
+      Jupyter: 5.7.2
+      Kernels: python3
+
+
+
+[2K[G
+[2K[G
+      Version: 4.4.2
+      Path: /usr/lib64/R
+      LibPaths:
+        - /home/rcannood/R/x86_64-redhat-linux-gnu-library/4.4
+        - /usr/lib64/R/library
+        - /usr/share/R/library
+      knitr: 1.49
+      rmarkdown: 2.29
+
+
+
+[2K[G
