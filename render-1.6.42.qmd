@@ -1,0 +1,13 @@
+---
+title: Mermaid in Quarto 1.6.42
+format: html
+---
+
+```{mermaid}
+graph TB
+  ben["🌱📈 Living benchmarks"]
+  pra["🌱📖 Living best practices"]
+  pip["🌱⚙️ Living reproducible pipelines"]
+  ben --> pra --> pip
+```
+
